@@ -1,5 +1,33 @@
+$font-stack: "Barlow", sans-serif;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: $font-stack;
+  display: grid;
+  grid-template-columns: 1.5rem auto 1.5rem;
+  margin-top: 1.5rem;
+}
+
+header {
+  grid-column: 2/3;
+  height: min-content;
+  display: flex;
+  justify-content: space-between;
+
+  .header-preorder-btn {
+    font-family: $font-stack;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #162542;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7em 0.9em;
+    background: #e8eff2;
+  }
 }
