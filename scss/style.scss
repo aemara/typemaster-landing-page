@@ -9,7 +9,7 @@ $font-stack: "Barlow", sans-serif;
 body {
   font-family: $font-stack;
   display: grid;
-  grid-template-columns: 1.5rem auto 1.5rem;
+  grid-template-columns: 1.5rem minmax(327px, 327px) 1.5rem;
   margin-top: 1.5rem;
 }
 
@@ -18,6 +18,7 @@ header {
   height: min-content;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 4em;
 
   .header-preorder-btn {
     font-family: $font-stack;
@@ -30,4 +31,59 @@ header {
     padding: 0.7em 0.9em;
     background: #e8eff2;
   }
+}
+
+.hero-section {
+  grid-column: 2/3;
+  margin-bottom: 4em;
+
+  img {
+    display: none;
+  }
+}
+
+.mobile-image-section {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1.5rem minmax(327px, 327px) 1.5rem;
+
+  .main-image {
+    width: 100%;
+    grid-column: 2/4;
+    border-radius: 20px 0 0 20px;
+    margin-bottom: 1.5em;
+  }
+
+  .secondary-images {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+
+    .image-phone-and-keyboard {
+      background: linear-gradient(
+          rgba(241, 103, 24, 0.7),
+          rgba(241, 103, 24, 0.7)
+        ),
+        url("/assets/mobile/image-phone-and-keyboard.jpg");
+      background-size: cover;
+      width: 30%;
+      border-radius: 0 20px 20px 0;
+    }
+
+    .image-glass-and-keyboard {
+      width: 60%;
+      border-radius: 20px;
+    }
+  }
+}
+
+.general-info-section {
+  grid-column: 2/3;
+  img {
+    display: none;
+  }
+}
+
+.footer-section {
+  grid-column: 2/3;
 }
