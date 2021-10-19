@@ -9,7 +9,7 @@ $font-stack: "Barlow", sans-serif;
 body {
   font-family: $font-stack;
   display: grid;
-  grid-template-columns: 1.5rem minmax(327px, 327px) 1.5rem;
+  grid-template-columns: 1.5rem minmax(327px, 500px) 1.5rem;
   margin-top: 1.5rem;
 }
 
@@ -87,7 +87,7 @@ header {
 .mobile-image-section {
   grid-column: 1/-1;
   display: grid;
-  grid-template-columns: 1.5rem minmax(327px, 327px) 1.5rem;
+  grid-template-columns: 1.5rem minmax(327px, 500px) 1.5rem;
   margin-bottom: 4.5em;
 
   .main-image {
@@ -184,4 +184,18 @@ header {
 
 .footer-section {
   grid-column: 2/3;
+  text-align: center;
+  margin-bottom: 3em;
+  color: #7b8bad;
+
+  .company-name {
+    font-weight: 700;
+    margin-right: 0.4em;
+  }
+
+  .rights {
+    font-weight: 500;
+    margin-left: 0.3em;
+    text-transform: capitalize;
+  }
 }
