@@ -9,7 +9,7 @@ $font-stack: "Barlow", sans-serif;
 body {
   font-family: $font-stack;
   display: grid;
-  grid-template-columns: 1.5rem minmax(327px, 500px) 1.5rem;
+  grid-template-columns: 1.5rem minmax(327px, 700px) 1.5rem;
   margin-top: 1.5rem;
 }
 
@@ -47,12 +47,14 @@ header {
       font-weight: 900;
       color: #162542;
       margin-bottom: 0.7em;
+      max-width: 400px;
     }
 
     .hero-main-content-paragraph {
       color: #7b8bad;
       font-weight: 500;
       margin-bottom: 2em;
+      max-width: 500px;
     }
 
     .btn-and-release-date {
@@ -87,7 +89,7 @@ header {
 .mobile-image-section {
   grid-column: 1/-1;
   display: grid;
-  grid-template-columns: 1.5rem minmax(327px, 500px) 1.5rem;
+  grid-template-columns: 1.5rem minmax(327px, 700px) 1.5rem;
   margin-bottom: 4.5em;
 
   .main-image {
@@ -124,6 +126,9 @@ header {
   grid-column: 2/3;
   text-align: center;
   margin-bottom: 6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .title {
     color: #162542;
@@ -131,6 +136,7 @@ header {
     font-size: 2em;
     width: 90%;
     margin: 0 auto;
+    max-width: 500px;
   }
 
   .paragraph {
@@ -138,6 +144,7 @@ header {
     color: #7b8bad;
     font-weight: 500;
     line-height: 26px;
+    max-width: 500px;
   }
 
   .images {
@@ -178,6 +185,7 @@ header {
       color: #7b8bad;
       font-weight: 500;
       line-height: 26px;
+      max-width: 500px;
     }
   }
 }
