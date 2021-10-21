@@ -110,7 +110,7 @@ header {
     grid-column: 2/-1;
     grid-row: 2/3;
     align-self: center;
-    margin-bottom: 0;
+    margin-bottom: 3em;
     display: grid;
     grid-template-columns: 1.1fr 3em 1fr;
 
@@ -156,7 +156,6 @@ header {
       text-transform: uppercase;
       font-size: 2em;
       width: 90%;
-      margin: 0 auto;
       max-width: 500px;
     }
 
@@ -181,6 +180,7 @@ header {
         ),
         url("/assets/mobile/image-phone-and-keyboard.jpg");
       background-size: cover;
+      background-position: right bottom;
       width: 30%;
       border-radius: 0 20px 20px 0;
     }
@@ -189,6 +189,37 @@ header {
       display: block;
       width: 60%;
       border-radius: 20px;
+    }
+  }
+}
+
+@media (min-width: 740px) {
+  .general-info-section {
+    grid-column: 2/3;
+
+    .general-info-content {
+      grid-column: 1/-1;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .title {
+        text-align: left;
+        width: 30%;
+      }
+      .paragraph {
+        margin: 0;
+        text-align: left;
+        width: 60%;
+      }
+    }
+
+    .images {
+      grid-column: 1/-1;
+
+      .image-phone-and-keyboard {
+        border-radius: 20px;
+      }
     }
   }
 }
