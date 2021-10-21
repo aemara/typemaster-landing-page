@@ -117,6 +117,9 @@ header {
     .hero-main-content {
       grid-column: 1/2;
       align-self: center;
+      max-width: 400px;
+      padding: 0;
+      margin: 0;
     }
 
     .hero-image-container {
@@ -180,7 +183,6 @@ header {
         ),
         url("/assets/mobile/image-phone-and-keyboard.jpg");
       background-size: cover;
-      background-position: right bottom;
       width: 30%;
       border-radius: 0 20px 20px 0;
     }
@@ -210,7 +212,7 @@ header {
       .paragraph {
         margin: 0;
         text-align: left;
-        width: 60%;
+        width: 55%;
       }
     }
 
@@ -218,6 +220,12 @@ header {
       grid-column: 1/-1;
 
       .image-phone-and-keyboard {
+        background: linear-gradient(
+            rgba(241, 103, 24, 0.7),
+            rgba(241, 103, 24, 0.7)
+          ),
+          url("/assets/tablet/image-phone-and-keyboard.jpg");
+        background-size: cover;
         border-radius: 20px;
       }
     }
