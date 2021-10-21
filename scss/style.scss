@@ -13,6 +13,13 @@ body {
   margin-top: 1.5rem;
 }
 
+@media (min-width: 740px) {
+  body {
+    grid-template-columns: 2.5rem auto 2.5rem;
+    grid-template-rows: auto auto auto auto auto;
+  }
+}
+
 header {
   grid-column: 2/3;
   height: min-content;
@@ -34,12 +41,14 @@ header {
 }
 
 .hero-section {
-  grid-column: 2/3;
-  margin-bottom: 4em;
+  grid-column: 2/-1;
+  margin-bottom: 1.5em;
 
   .hero-main-content {
     display: flex;
     flex-direction: column;
+    padding-right: 1.5em;
+    margin-bottom: 4em;
 
     .hero-main-content-title {
       font-size: 3rem;
@@ -55,6 +64,7 @@ header {
       font-weight: 500;
       margin-bottom: 2em;
       max-width: 500px;
+      line-height: 26px;
     }
 
     .btn-and-release-date {
@@ -81,8 +91,49 @@ header {
     }
   }
 
-  .hero-image {
-    display: none;
+  .hero-image-container {
+    .image-mobile {
+      display: block;
+      max-width: 100%;
+      border-radius: 15px 0 0 15px;
+    }
+    .image-tablet,
+    .image-desktop {
+      display: none;
+      border-radius: 20px;
+    }
+  }
+}
+
+@media (min-width: 740px) {
+  .hero-section {
+    grid-column: 2/-1;
+    grid-row: 2/3;
+    align-self: center;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 1.1fr 3em 1fr;
+
+    .hero-main-content {
+      grid-column: 1/2;
+      align-self: center;
+    }
+
+    .hero-image-container {
+      grid-column: 3/-1;
+      overflow: hidden;
+
+      .image-mobile,
+      .image-desktop {
+        display: none;
+      }
+
+      .image-tablet {
+        display: block;
+        max-width: 150%;
+        border-radius: 20px 0 0 20px;
+      }
+    }
   }
 }
 
@@ -123,32 +174,58 @@ header {
 }
 
 .general-info-section {
-  grid-column: 2/3;
+  grid-column: 1/-1;
   text-align: center;
   margin-bottom: 6em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1.5rem auto 1.5rem;
 
-  .title {
-    color: #162542;
-    text-transform: uppercase;
-    font-size: 2em;
-    width: 90%;
-    margin: 0 auto;
-    max-width: 500px;
-  }
+  .general-info-content {
+    margin-top: 4em;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  .paragraph {
-    margin-top: 1.5em;
-    color: #7b8bad;
-    font-weight: 500;
-    line-height: 26px;
-    max-width: 500px;
+    .title {
+      color: #162542;
+      text-transform: uppercase;
+      font-size: 2em;
+      width: 90%;
+      margin: 0 auto;
+      max-width: 500px;
+    }
+
+    .paragraph {
+      margin-top: 1.5em;
+      color: #7b8bad;
+      font-weight: 500;
+      line-height: 26px;
+      max-width: 500px;
+    }
   }
 
   .images {
-    display: none;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+
+    .image-phone-and-keyboard {
+      background: linear-gradient(
+          rgba(241, 103, 24, 0.7),
+          rgba(241, 103, 24, 0.7)
+        ),
+        url("/assets/mobile/image-phone-and-keyboard.jpg");
+      background-size: cover;
+      width: 30%;
+      border-radius: 0 20px 20px 0;
+    }
+
+    .image-glass-and-keyboard {
+      display: block;
+      width: 60%;
+      border-radius: 20px;
+    }
   }
 }
 
