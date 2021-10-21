@@ -187,10 +187,15 @@ header {
       border-radius: 0 20px 20px 0;
     }
 
-    .image-glass-and-keyboard {
+    .mobile-image-glass-and-keyboard {
       display: block;
       width: 60%;
       border-radius: 20px;
+    }
+
+    .tablet-image-glass-and-keyboard,
+    .desktop-image-glass-and-keyboard {
+      display: none;
     }
   }
 }
@@ -227,6 +232,17 @@ header {
           url("/assets/tablet/image-phone-and-keyboard.jpg");
         background-size: cover;
         border-radius: 20px;
+      }
+
+      .tablet-image-glass-and-keyboard {
+        display: block;
+        width: 60%;
+        border-radius: 20px;
+      }
+
+      .mobile-image-glass-and-keyboard,
+      .desktop-image-glass-and-keyboard {
+        display: none;
       }
     }
   }
