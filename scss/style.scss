@@ -265,6 +265,29 @@ header {
   }
 }
 
+@media (min-width: 740px) {
+  .features-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 8.75em;
+
+    .feature {
+      align-items: flex-start;
+      width: 45%;
+
+      .feature-title {
+        max-width: 215px;
+      }
+
+      .feature-title,
+      .feature-description {
+        text-align: left;
+      }
+    }
+  }
+}
+
 .footer-section {
   grid-column: 2/3;
   text-align: center;
