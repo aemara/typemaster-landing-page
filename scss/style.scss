@@ -137,42 +137,6 @@ header {
   }
 }
 
-.mobile-image-section {
-  grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: 1.5rem minmax(327px, 700px) 1.5rem;
-  margin-bottom: 4.5em;
-
-  .main-image {
-    width: 100%;
-    grid-column: 2/4;
-    border-radius: 20px 0 0 20px;
-    margin-bottom: 1.5em;
-  }
-
-  .secondary-images {
-    grid-column: 1/3;
-    display: flex;
-    justify-content: space-between;
-
-    .image-phone-and-keyboard {
-      background: linear-gradient(
-          rgba(241, 103, 24, 0.7),
-          rgba(241, 103, 24, 0.7)
-        ),
-        url("/assets/mobile/image-phone-and-keyboard.jpg");
-      background-size: cover;
-      width: 30%;
-      border-radius: 0 20px 20px 0;
-    }
-
-    .image-glass-and-keyboard {
-      width: 60%;
-      border-radius: 20px;
-    }
-  }
-}
-
 .general-info-section {
   grid-column: 1/-1;
   text-align: center;
