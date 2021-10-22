@@ -52,6 +52,10 @@ header {
   }
 }
 
+/***************
+HERO SECTION
+*****************/
+
 .hero-section {
   grid-column: 2/-1;
   margin-bottom: 1.5em;
@@ -179,6 +183,10 @@ header {
     border-radius: 20px;
   }
 }
+
+/***************
+GENERAL INFO SECTION
+*****************/
 
 .general-info-section {
   grid-column: 1/-1;
@@ -356,6 +364,10 @@ header {
   }
 }
 
+/***************
+FEATURES SECTION
+*****************/
+
 .features-section {
   grid-column: 2/3;
   display: flex;
@@ -439,6 +451,10 @@ header {
     }
   }
 }
+
+/***************
+FOOTER
+*****************/
 
 .footer-section {
   grid-column: 2/3;
