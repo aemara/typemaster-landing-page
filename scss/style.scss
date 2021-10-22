@@ -265,11 +265,9 @@ GENERAL INFO SECTION
     justify-content: space-between;
 
     .image-phone-and-keyboard {
-      background: linear-gradient(
-          rgba(241, 103, 24, 0.7),
-          rgba(241, 103, 24, 0.7)
-        ),
+      background: linear-gradient(rgba(241, 103, 24, 1), rgba(241, 103, 24, 1)),
         url("/assets/mobile/image-phone-and-keyboard.jpg");
+      background-blend-mode: multiply;
       background-size: cover;
       width: 30%;
       border-radius: 0 20px 20px 0;
@@ -314,10 +312,11 @@ GENERAL INFO SECTION
 
       .image-phone-and-keyboard {
         background: linear-gradient(
-            rgba(241, 103, 24, 0.7),
-            rgba(241, 103, 24, 0.7)
+            rgba(241, 103, 24, 1),
+            rgba(241, 103, 24, 1)
           ),
           url("/assets/tablet/image-phone-and-keyboard.jpg");
+        background-blend-mode: multiply;
         background-size: cover;
         border-radius: 20px;
       }
@@ -353,10 +352,11 @@ GENERAL INFO SECTION
         grid-column: 3/4;
         grid-row: 1/2;
         background: linear-gradient(
-            rgba(241, 103, 24, 0.7),
-            rgba(241, 103, 24, 0.7)
+            rgba(241, 103, 24, 1),
+            rgba(241, 103, 24, 1)
           ),
           url("/assets/desktop/image-phone-and-keyboard.jpg");
+        background-blend-mode: multiply;
         background-size: cover;
         border-radius: 20px;
         width: 100%;
