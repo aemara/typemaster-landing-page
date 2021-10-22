@@ -190,6 +190,16 @@ HERO SECTION
   .hero-section {
     grid-column: 3/4;
 
+    .hero-main-content {
+      .hero-main-content-title {
+        font-size: 3.5rem;
+      }
+
+      .hero-main-content-paragraph {
+        font-size: 1.125rem;
+      }
+    }
+
     .hero-image-container {
       .image-mobile,
       .image-tablet {
@@ -424,7 +434,7 @@ FEATURES SECTION
     .feature-title {
       color: #162542;
       font-weight: 900;
-      font-size: 1.5em;
+      font-size: 1.5rem;
       text-transform: uppercase;
       width: 60%;
       margin-bottom: 1em;
