@@ -26,6 +26,14 @@ body {
   }
 }
 
+button {
+  transition: all 0.2s;
+}
+
+/***************
+HEADER
+*****************/
+
 header {
   grid-column: 2/3;
   height: min-content;
@@ -43,6 +51,18 @@ header {
     border-radius: 8px;
     padding: 0.7em 0.9em;
     background: #e8eff2;
+  }
+
+  .header-preorder-btn:hover {
+    background: #162542;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .header-preorder-btn:focus {
+    background: #162542;
+    color: #ffffff;
+    outline: none;
   }
 }
 
@@ -97,6 +117,16 @@ HERO SECTION
         border-radius: 8px;
         padding: 0.8em 0.9em;
         background: #f16718;
+      }
+
+      .hero-preorder-btn:hover {
+        background: #ff9b62;
+        cursor: pointer;
+      }
+
+      .hero-preorder-btn:focus {
+        background: #ff9b62;
+        outline: none;
       }
 
       .hero-release-date {
