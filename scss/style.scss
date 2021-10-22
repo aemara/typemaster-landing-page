@@ -21,7 +21,7 @@ body {
 
 @media (min-width: 1200px) {
   body {
-    grid-template-columns: 5rem 2rem auto 2rem 5rem;
+    grid-template-columns: 8rem 2rem auto 2rem 8rem;
     overflow-x: hidden;
   }
 }
@@ -344,7 +344,7 @@ GENERAL INFO SECTION
 
     .images {
       display: grid;
-      grid-template-columns: 4rem 2.5rem 0.5fr 2rem 1fr;
+      grid-template-columns: 8rem 2.5rem 0.5fr 2rem 1fr;
       grid-template-rows: auto;
       width: 70%;
 
