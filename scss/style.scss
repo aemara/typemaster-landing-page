@@ -16,6 +16,7 @@ body {
 @media (min-width: 740px) {
   body {
     grid-template-columns: 2.5rem auto 2.5rem;
+    margin-top: 2.5rem;
   }
 }
 
@@ -23,6 +24,7 @@ body {
   body {
     grid-template-columns: 8rem 2rem auto 2rem 8rem;
     overflow-x: hidden;
+    margin-top: 3.4rem;
   }
 }
 
